@@ -1,8 +1,8 @@
-"        ~_
-"     ~_ )_)~_
-"     )_))_))_)
-"     _!__!__!_
-"  ~~\ t   Gemu/~~
+"       ~_
+"    ~_ )_)~_
+"    )_))_))_)
+"    _!__!__!_
+"  ~~\t  Gemu/~~
 
 "  File Name: .vimrc
 "  Purpose: set VIM personal settings
@@ -41,11 +41,11 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 "CUSTOM FUNCTIONS:
 
 function! s:insert_logo()
-  let line_0_logo ="*         ~_"
-  let line_1_logo ="*      ~_ )_)~_"
-  let line_2_logo ="*      )_))_))_)" 
-  let line_3_logo ="*      _!__!__!_"
-  let line_4_logo ="*   ~~\\ t   Gemu/~~"
+  let line_0_logo ="*        ~_"
+  let line_1_logo ="*     ~_ )_)~_"
+  let line_2_logo ="*     )_))_))_)" 
+  let line_3_logo ="*     _!__!__!_"
+  let line_4_logo ="*   ~~\\t  Gemu/~~"
 
   execute "normal! o" . line_0_logo
   execute "normal! o" . line_1_logo
@@ -108,7 +108,7 @@ endfunction
 autocmd BufNewFile *.{h,hpp} call <SID>custom_cpp_h_header()
 
 
-autocmd BufNewFile *.{cpp} call <SID>custom_cpp_header()
+autocmd BufNewFile *.{cpp,cc} call <SID>custom_cpp_header()
 
 
 
