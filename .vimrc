@@ -40,6 +40,9 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 "CUSTOM FUNCTIONS:
 
+"https://vim.fandom.com/wiki/Remove_unwanted_spaces
+autocmd BufWritePre * %s/\s\+$//e
+
 function! s:insert_logo()
   let line_0_logo ="*        ~_"
   let line_1_logo ="*     ~_ )_)~_"
